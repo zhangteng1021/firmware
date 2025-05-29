@@ -61,7 +61,7 @@ extern "C" {
 
 #define PIN_BUTTON1 9 // Pin for button on E-ink button module or IO expansion
 #define BUTTON_NEED_PULLUP
-#define PIN_BUTTON2 12
+#define PIN_BUTTON2 10
 #define PIN_BUTTON3 24
 #define PIN_BUTTON4 25
 
@@ -97,12 +97,12 @@ static const uint8_t AREF = PIN_AREF;
 /*
  * Serial interfaces
  */
-#define PIN_SERIAL1_RX (15)
-#define PIN_SERIAL1_TX (16)
+#define PIN_SERIAL1_RX (20)
+#define PIN_SERIAL1_TX (19)
 
 // Connected to Jlink CDC
-#define PIN_SERIAL2_RX (8)
-#define PIN_SERIAL2_TX (6)
+#define PIN_SERIAL2_RX (15)
+#define PIN_SERIAL2_TX (16)
 
 /*
  * SPI Interfaces
@@ -234,8 +234,8 @@ SO GPIO 39/TXEN MAY NOT BE DEFINED FOR SUCCESSFUL OPERATION OF THE SX1262 - TG
 // #define PIN_GPS_EN PIN_3V3_EN
 #define PIN_GPS_PPS (17) // Pulse per second input from the GPS
 
-#define GPS_RX_PIN PIN_SERIAL1_RX
-#define GPS_TX_PIN PIN_SERIAL1_TX
+#define GPS_RX_PIN PIN_SERIAL2_RX
+#define GPS_TX_PIN PIN_SERIAL2_TX
 
 // Define pin to enable GPS toggle (set GPIO to LOW) via user button triple press
 
